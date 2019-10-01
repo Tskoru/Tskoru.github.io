@@ -11,42 +11,42 @@
     Что такое макросы?<h1></h1>
     Макрос - записанная последовательность команд, которую надо записать один раз, а потом можно поручить выполнить excel.<h1></h1>
   Первый макрос, который я сделала - макрос вставки. Он помогает вставлять любую фразу на любую ячейку простым нажатием на комбинацию клавиш ctrl и любой другой на ваш выбор. Мой макрос вставки работает только на одном листе блягодаря специальному коду(If Worksheets(ActiveSheet.Name).Name = "Лист1" Then (МАКРОС) End if):<h1></h1><h1></h1>
-    Sub Макрос3()
+    Sub Макрос3()<br>
 '
-' Макрос3 Макрос
+' Макрос3 Макрос<br>
 '
-' Сочетание клавиш: Ctrl+й
+' Сочетание клавиш: Ctrl+й<br>
 '
-If Worksheets(ActiveSheet.Name).Name = "Лист1" Then
-    ActiveCell.FormulaR1C1 = "catdog"
-    Range("A2").Select
-    End If
+If Worksheets(ActiveSheet.Name).Name = "Лист1" Then<br>
+    ActiveCell.FormulaR1C1 = "catdog"<br>
+    Range("A2").Select<br>
+    End If<br>
 End Sub<h1></h1>
     Следующий макрос может находить определённые буквы, или сочетания букв, или сочетания цифр и заменять их на другие. Мой макрос менял слово catdog на dogcat:<h1></h1>
 
-Sub Макрос4()
+Sub Макрос4()<br>
 '
-' Макрос4 Макрос
+' Макрос4 Макрос<br>
 '
-' Сочетание клавиш: Ctrl+ц
+' Сочетание клавиш: Ctrl+ц<br>
 '
-    Cells.Find(What:="catdog", After:=ActiveCell, LookIn:=xlFormulas, LookAt _
-        :=xlPart, SearchOrder:=xlByRows, SearchDirection:=xlNext, MatchCase:= _
-        False, SearchFormat:=False).Activate
-    Cells.Replace What:="catdog", Replacement:="dogcat", LookAt:=xlPart, _
-        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
-        ReplaceFormat:=False
-End Sub <h1></h1>
+    Cells.Find(What:="catdog",<br> After:=ActiveCell, <br>LookIn:=xlFormulas,v LookAt _
+        :=xlPart,<br> SearchOrder:=xlByRows,<br> SearchDirection:=xlNext, <br>MatchCase:= _
+        False,<br> SearchFormat:=False).<br>Activate
+    Cells.Replace What:="catdog",<br><br> Replacement:="dogcat",<br> LookAt:=xlPart, <br>_
+        SearchOrder:=xlByRows,<br> MatchCase:=False,<br> SearchFormat:=False,<br> _
+        ReplaceFormat:=False<br>
+End Sub <br>
 Последний макрос, который я сделала, менял толщину шрифта и делал надпись курсивной:<h1></h1>
-Sub Макрос5()
+Sub Макрос5()<br>
 '
-' Макрос5 Макрос
+' Макрос5 <br>Макрос<br>
 '
-' Сочетание клавиш: Ctrl+у
+' Сочетание клавиш: Ctrl+у<br>
 '
-    Selection.Font.Bold = True
-    Selection.Font.Italic = True
-End Sub
+    Selection.Font.Bold = True<br><br>
+    Selection.Font.Italic = True<br>
+End Sub<br>
   </body>
 
 </html>
