@@ -6,7 +6,7 @@
   <style>
     @font-face {
       font-family: "Fairy";
-      src: url(https://berdges86.github.io/Fairy_Tale.ttf);
+      src: url(https://Tskoru.github.io/18365.ttf);
     }
     
     body {
@@ -14,7 +14,7 @@
       flex-wrap: wrap;
       align-content: space-between;
       overflow: hidden;
-      background: linear-gradient(45deg, blue, gold, lightgreen, gold, red);
+      background: url("https://Tskoru.github.io/447.jpg");
       mix-blend-mode: multiply;
     }
     
@@ -93,7 +93,7 @@ document.getElementById("inf1").innerHTML ="";
       document.getElementById("inf1").textContent ="";
       var abc = Number(document.getElementById("var_in").value);
       var d = ( (abc - abc % 100) / 100)  
-      var e = ((abc - abc % 10) / 10 - (abc - abc % 100) / 100)
+      var e = (abc - abc % 10) / 10 - (abc - abc % 100) / 10
       var f = (abc % 10)
        document.getElementById("inf1").innerHTML = " наоборот " + f + e + d
         ; 
@@ -101,20 +101,42 @@ document.getElementById("inf1").innerHTML ="";
    function er4() {
       var abc = Number(document.getElementById("var_in").value);
 document.getElementById("inf1").innerHTML ="";
-      var g = ( (abc - abc % 100) / 100)
-      var h = (( abc - abc % 10)/ 10 - (abc - abc % 100) / 100)
-      var i = (abc % 10) 
-      document.getElementById("inf1").innerHTML = "поменять" + i + h + g;
-
+      var d = ( (abc - abc % 100) / 100)
+      var e = ( abc - abc % 10)/ 10 - (abc - abc % 100) / 10
+      var f = (abc % 10) 
+      document.getElementById("inf1").innerHTML = "поменять" + e + f + d;
    }
-    }
    function er5() {
       var abc = Number(document.getElementById("var_in").value);
 document.getElementById("inf1").innerHTML ="";
-      var g = ( (abc - abc % 100) / 100)
-      var h = (( abc - abc % 10)/ 10 - (abc - abc % 100) / 100)
-      var i = (abc % 10) 
-      document.getElementById("inf1").innerHTML = "поменять" + g + h + i;
+      var d = ( (abc - abc % 100) / 100)
+      var e = ( abc - abc % 10)/ 10 - (abc - abc % 100) / 10
+      var f = (abc % 10) 
+      document.getElementById("inf1").innerHTML = "поменять" + f + d + e;
+   }
+   function er6() {
+      var abc = Number(document.getElementById("var_in").value);
+document.getElementById("inf1").innerHTML ="";
+      var d = ( (abc - abc % 100) / 100)
+      var e = ( abc - abc % 10)/ 10 - (abc - abc % 100) / 10
+      var f = (abc % 10) 
+      document.getElementById("inf1").innerHTML = "поменять" + e + d + f;
+   }
+   function er7() {
+      var abc = Number(document.getElementById("var_in").value);
+document.getElementById("inf1").innerHTML ="";
+      var d = ( (abc - abc % 100) / 100)
+      var e = ( abc - abc % 10)/ 10 - (abc - abc % 100) / 10
+      var f = (abc % 10) 
+      document.getElementById("inf1").innerHTML = "поменять" + e + f + d;
+   }
+   function er8() {
+      var abc = Number(document.getElementById("var_in").value);
+document.getElementById("inf1").innerHTML ="";
+      var d = ( (abc - abc % 100) / 100)
+      var e = ( abc - abc % 10)/ 10 - (abc - abc % 100) / 10
+      var f = (abc % 10) 
+      document.getElementById("inf1").innerHTML = "поменять<br>" + d + e + f + "<br>поменять<br>" + d + f + e + "<br>поменять<br>" + f + e + d + "<br>поменять<br>" + e + d + f + "<br>поменять<br>" + e + f + d + "<br>поменять<br>" + f + d + e;
    }
   </script>
 </head>
@@ -125,6 +147,9 @@ document.getElementById("inf1").innerHTML ="";
   <a class="button8" onclick="er3()">2.13</a>
   <a class="button8" onclick="er4()">2.14</a>
   <a class="button8" onclick="er5()">2.15</a>
+  <a class="button8" onclick="er6()">2.16</a>
+  <a class="button8" onclick="er7()">2.17</a>
+  <a class="button8" onclick="er8()">2.18</a>
   
   <div class="layer1">
     <input type="text" value="57" id="var_in">
