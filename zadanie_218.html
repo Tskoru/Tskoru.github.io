@@ -87,7 +87,7 @@ document.getElementById("inf1").innerHTML ="";
  function er1() {
       var abc = Number(document.getElementById("var_in").value);
 document.getElementById("inf1").innerHTML ="";
-      document.getElementById("inf1").innerHTML = "сотен " + (abc - abc % 100) / 100 + "<br>десятков " + ((abc - abc % 10) / 10 - (abc - abc % 100) / 10)  + "<br>единиц " + abc % 10  + "<br>их сумма=" + ((abc - abc % 100) / 100 +  ((abc - abc % 10 ) / 10) / 10 - ((abc - abc % 10) / 10 ) + abc % 10) + "<br>их произведение=" + (((abc - abc % 100) / 100) * ((abc - abc % 10) / 10 - (abc - abc % 100) / 10) * (abc % 10 ))  ;
+      document.getElementById("inf1").innerHTML = "сотен " + (abc - abc % 100) / 100 + "<br>десятков " + ((abc - abc % 10) / 10 - (abc - abc % 100) / 10)  + "<br>единиц " + abc % 10  + "<br>их сумма=" + ((abc - abc % 100) / 100 +  ((abc - abc % 10 ) / 10)  - ((abc - abc % 100) / 10 ) + abc % 10) + "<br>их произведение=" + (((abc - abc % 100) / 100) * ((abc - abc % 10) / 10 - (abc - abc % 100) / 10) * (abc % 10 ))  ;
     }
     function er3() {
       document.getElementById("inf1").textContent ="";
