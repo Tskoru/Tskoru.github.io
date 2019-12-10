@@ -169,7 +169,7 @@
       var ctx = canvas.getContext('2d');
       ctx.beginPath();
       for (x = -1; x <= 64; x = x + 0.1) {
-        ctx.lineTo(x * 100 + 6, 100 * Math.sin(x) + 5 + 240);
+        ctx.lineTo(x * 10 + 6, 10 * Math.sin(x*1.25) - Math.cos(x+1) + 5 + 240);
       }
       ctx.strokeStyle = "blue";
       ctx.lineTo(640, 240);
@@ -213,8 +213,8 @@
       function drawpoint2() {
       x = Number(document.getElementById("x_znach").value);
       y = Number(document.getElementById("y_znach").value);
-      x = 320 + x * 100;
-      y = 240 - y * 100;
+      x = 320 + x * 10;
+      y = 240 - y * 10;
       var canvas = document.getElementById('example');
       var ctx = canvas.getContext('2d');
       ctx.beginPath();
@@ -233,7 +233,7 @@
   <a href="#" onclick="clean()" class="button purple">Очистить</a>
   <a href="#" onclick="er1()" class="button purple">Графики</a>
   <a href="#" onclick="er2()" class="button green">[cos(1/2x) -0.5<0] </a>
-  <a href="#" onclick="er3()" class="button green">[sin(x) -0.5<0] </a>
+  <a href="#" onclick="er3()" class="button green">[sin(1.25x)-cos(x+1) -0.5<0] </a>
   <br>
   <canvas width='640' height='480' id='example'>Обновите браузер</canvas>
   <br>
