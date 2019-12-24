@@ -135,10 +135,10 @@
       drawpoint();
       x = Number(document.getElementById("x_znach").value);
       y = Number(document.getElementById("y_znach").value);
-      if ((Math.cos(1/2 * x) -0.5) <0)  {
-        document.getElementById("otvet").innerHTML = "x= " +x + " " +"y= " + (Math.cos(1/2 * x) -0.5)+ "<br>Точка в области, где ф-ция меньше 0";
+      if ((Math.cos(1/2 * x) -0,5) <0)  {
+        document.getElementById("otvet").innerHTML = "x= " +x + " " +"y= " + (Math.cos(1/2 * x) -0,5)+ "<br>Точка в области, где ф-ция меньше 0";
       } else {
-        document.getElementById("otvet").innerHTML = "x= " +x + " " +"y= " + (Math.cos(1/2 * x) -0.5)+ "<br>Точка в области, где ф-ция больше 0";
+        document.getElementById("otvet").innerHTML = "x= " +x + " " +"y= " + (Math.cos(1/2 * x) -0,5)+ "<br>Точка в области, где ф-ция больше 0";
       }
       ctx.closePath();
       ctx.beginPath();
@@ -169,7 +169,7 @@
       var ctx = canvas.getContext('2d');
       ctx.beginPath();
       for (x = -1; x <= 64; x = x + 0.1) {
-        ctx.lineTo(x * 10 + 6, 10 * Math.sin(x*1.25) - Math.cos(x+1) + 5 + 240);
+        ctx.lineTo(x * 10 + 6, 10* (Math.sin(5/4*x) - Math.cos(x+1)) -0,5 + 240);
       }
       ctx.strokeStyle = "blue";
       ctx.lineTo(640, 240);
@@ -181,10 +181,10 @@
       drawpoint2();
       x = Number(document.getElementById("x_znach").value);
       y = Number(document.getElementById("y_znach").value);
-      if ((Math.cos(1/2 * x) -0.5) <0)  {
-        document.getElementById("otvet").innerHTML = "x= " +x + " " +"y= " + (Math.cos(1/2 * x) -0.5)+ "<br>Точка в области, где ф-ция меньше 0";
+      if ((Math.sin(5/4 * x) - Math.cos(x+1) - 0,5) <0)  {
+        document.getElementById("otvet").innerHTML = "x= " +x + " " +"y= " + (Math.sin(5/4 * x) - Math.cos(x+1) - 0,5)+ "<br>Точка в области, где ф-ция меньше 0";
       } else {
-        document.getElementById("otvet").innerHTML = "x= " +x + " " +"y= " + (Math.cos(1/2 * x) -0.5)+ "<br>Точка в области, где ф-ция больше 0";
+        document.getElementById("otvet").innerHTML = "x= " +x + " " +"y= " + (Math.sin(5/4 * x) - Math.cos(x+1) - 0,5)+ "<br>Точка в области, где ф-ция больше 0";
       }
       ctx.closePath();
       ctx.beginPath();
