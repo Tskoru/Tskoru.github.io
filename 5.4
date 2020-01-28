@@ -1,4 +1,3 @@
-
 <html>
 
 <head>
@@ -86,29 +85,102 @@ background: #D8E6F3;
       
       }
       
+function Clean1() {
 
+      document.getElementById("myTable").innerHTML="";
+
+    }
+    var c = 0
+    var temp = ""
+    var temp2 = ""
+    var temp3 = ""
+    flag =0
+  
+
+    function CreateRow() {
+      var y = document.createElement("TR");
+      y.setAttribute("id", temp);
+      document.getElementById("myTable").appendChild(y);
+
+    }
+    function CreateRow2() {
+      var y = document.createElement("TR");
+      y.setAttribute("id", temp2);
+      document.getElementById("myTable").appendChild(y);
+
+    }
+      function CreateRow3() {
+      var y = document.createElement("TR");
+      y.setAttribute("id", temp2);
+      document.getElementById("myTable").appendChild(y);
+
+    }
+
+
+    function CreateTable() {
+      var x = document.createElement("TABLE");
+      x.setAttribute("id", "myTable");
+      document.body.appendChild(x);
+    }
+
+
+    function er() {
+      temp = "Tr1_" + c
+      temp2 = "Tr2_" + c
+      temp3 = "Tr3_" + c
+      c++
+      if (flag ==0){CreateTable()}
+  
+  CreateRow()
+  flag=1
+      var b = Number(document.getElementById("in1").value);
+      for (var i = 25; i <= b; i++) {
+        var z1 = document.createElement("TH");
+        var t = document.createTextNode(i);
+        z1.appendChild(t);
+        document.getElementById(temp).appendChild(z1);
+        }
+       
+  CreateRow2()
+       var b = Number(document.getElementById("in1").value);
+		for (var i = 25; i <= b; i++) {
+        var z2 = document.createElement("TD");
+        example = i+0.5;
+        var l = document.createTextNode(example);
+        z2.appendChild(l);
+        document.getElementById(temp2).appendChild(z2);
       
-        
-        
+      }
+        CreateRow3()
+       var b = Number(document.getElementById("in1").value);
+		for (var i = 25; i <= b; i++) {
+        var z2 = document.createElement("TD");
+        example = i-0.2;
+        var l = document.createTextNode(example);
+        z2.appendChild(l);
+        document.getElementById(temp2).appendChild(z2);
       
+      }
 
     }
   </script>
 </head>
 
 <body>
-  <button onclick="er()">Нажми на меня</button>
+  <button onclick="er()">А</button>
     <button onclick="Clean()">Стереть таблицу</button>
-  <br>
-  <br> А)
+  <br> 
   <input type="text" value="25" id="in1">
   <br>
+  <br> 
+    <button onclick="er()">Б</button>
+    <button onclick="Clean()">Стереть таблицу</button>
   <br>
+  <input type="text" value="35" id="in1">
   <div id="inf1"></div>
 
 
 </body>
 
 </html>
-
 
