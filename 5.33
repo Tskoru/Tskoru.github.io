@@ -40,6 +40,7 @@
     var temp1 = ""
     var temp2 = ""
     sum1 = 0
+    sum2 = 0
     flag = 0
 
     function CreateTable() {
@@ -81,9 +82,9 @@
           z.setAttribute("id", temp2);
           t = document.createTextNode(i / b);
           z.appendChild(t);
-          sum1 = sum1 + i / 1 ;
+          sum1 = sum1 + i  / (i+1) ;
           document.getElementById(temp1).appendChild(z);
-          l += 1;
+          l +=1;
         }
         for (var j = 1; j < 1; j++) {
           var y = document.createElement("TH");
